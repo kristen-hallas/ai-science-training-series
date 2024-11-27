@@ -37,31 +37,37 @@ You need to submit either Theory Homework or Hands-on Homework.
 * Based on hands-on sessions, describe a typical workflow for refactoring an AI model to run on one of ALCF's AI testbeds (e.g., SambaNova or Cerebras). What tools or software stacks are typically used in this process?
 * Give an example of a project that would benefit from AI accelerators and why?
 
+## Solutions
 
-<details>
-<summary>Theory Homework Solutions</summary>
+1. What are the key architectural features that make these systems suitable for AI workloads?
 
-1. **What are the key architectural features that make these systems suitable for AI workloads?**
-   The key architectural features that make AI accelerators like SambaNova, Cerebras, Graphcore, and Groq systems suitable for AI workloads are:
-   1. Specialized Hardware Design to accelerate matrix multiplications and tensor operations.
-   2. High Memory Bandwidth and larger amount of on-chip memory help to accelerate memory intensive AI worklaods. 
-   3. Scalability and Parallelism: Parallel processing of data across many cores or processing units, which significantly speeds up training and inference tasks
+I identified the architecture of AI accelerators having distinct characteristics that help them handle computationally intense workloads more efficiently:
+* Data flows: Data flows through a network of processing elements, which is more efficient for parallel processing and high data throughput. 
+* Spatially intelligent: Since memory is distributed across cores, this reduces the energy cost compared to traditional architecture. AI tasks that require low latency with high memory bandwidth benefit from the distributed structure like this. This also really speeds up the training process. 
+* Reconfigurable: The SambaNova Reconfigurable Dataflow Unit (RDU) can be optimized for specific AI models by modifying execution paths. This is more efficient with better performance, such as for matrix multiplications and tensor operations.
+Ultimately, these AI accelerators have hardware and on-chip memory specialized for memory intensive AI workloads.
+
+2. Identify the primary differences between these AI accelerator systems in terms of their architecture and programming models.
+
+| **Feature**             | **Cerebras CS-2**                                                                 | **SambaNova DataScale SN30**                                                                 | **Graphcore BowPod64**                                                                 | **Groq**                                                                 |
+|-------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **Architecture**        | Wafer-scale engine with 850,000 cores optimized for sparse linear algebra         | Tiled architecture with reconfigurable SIMD pipelines and distributed scratchpads            | Composed of Intelligence Processing Units (IPUs) with a bulk-synchronous parallel execution model                   | Large on-chip SRAM and a flat memory hierarchy; Tensor Streaming Processor (TSP)                           |
+| **Programming Model**   | Dataflow programming where tasks are activated by data packets; highly parallel and scalable                    | Supports high-level ML graph transformation and optimizations using its graph compiler       | Utilizes the Poplar SDK for graph-based model execution; Bulk Synchronous Parallelism (BSP) for computation and communication in two phases                                | Utilizes the GroqFlow toolchain for seamless integration with PyTorch or TensorFlow models; deterministic execution for inference tasks |
+| **Memory**              | 40GB on-chip SRAM with a high memory bandwidth of 20 PByte/s; processing elements (PEs) have their own memory and operate independently                     | 640 MB on-chip memory with extensive external memory support; terabytes of addressable memory with multi-tiered memory architecture                                | Features in-processor memory for each IPU to support high parallelism; interconnected processing tiles have their own core and local memory                   | Flat memory hierarchy exposed to software as directly addressable banks |
 
 
-2. **Identify the primary differences between these AI accelerator systems in terms of their architecture and programming models.**
-   
-    1.  Sambanovas Reconfigurable Dataflow Unit (RDU) allows for flexible dataflow processing that features a multi-tiered memory architecture with terabytes of addressable memory for efficinet handling of large data. 
-    2.  Cerebras Wafer-Scale Engine (WSE) consists of processing elements (PEs) with its own memory and operates independently. Fine-grained dataflow control mechanism within its PEs make the system highly parallel and scalable.
-    3. Graphcore’s Intelligence Processing Unit (IPU) consists of many interconnected processing tiles, each with its own core and local memory. The IPU operates in two phases—computation and communication—using Bulk Synchronous Parallelism (BSP).
-    4. Groq’s Tensor Streaming Processor (TSP) architecture focuses on deterministic execution which s particularly advantageous for inference tasks where low latency is critical.
+3. Based on hands-on sessions, describe a typical workflow for refactoring an AI model to run on one of ALCF's AI testbeds (e.g., SambaNova or Cerebras). What tools or software stacks are typically used in this process?
+
+* Define a model with PyTorch or TensorFlow
+* Integrate with Hardware API, like CerebrasAPI to map models to high-performance kernals
+* Use a graph compiler, like Cerebras Graph Compiler to transform model into an optimized execution graph
+* Deploy on hardware with runtime environments specific to your AI accelerator
+* Use profiling tools to optimize compute and memory usage before execution, like the GroqView Profiler
 
 
-3. **Based on hands-on sessions, describe a typical workflow for refactoring an AI model to run on one of ALCF's AI testbeds (e.g., SambaNova or Cerebras). What tools or software stacks are typically used in this process?**
+4. Give an example of a project that would benefit from AI accelerators and why?
 
-    Typical worksflow involves using vendor specific implementation of ML framework like PyTorch to port model. Refer to following documentation examples to understand details of workflow. 
-    * [PyTroch to PopTroch](https://docs.graphcore.ai/projects/poptorch-user-guide/en/latest/pytorch_to_poptorch.html)
-    * [Sambaflow Model Conversion](https://docs.sambanova.ai/developer/latest/porting-overview.html)
-</details>
+The 1000 Genomes project is one of the largest distributed data collection and analysis projects ever done in biology. Recent advances in genome-scale foundation models would significantly benefit from AI accelerators due to the intense computational power and memory bandwidth requires to churn through these datasets. For example, the wafer-scale architecture from Cerebras CS-2 would provide adequate resources to process these workloads in parallel, accelerating scientific discovery. 
 
 
 ##### Hands-on Homework
