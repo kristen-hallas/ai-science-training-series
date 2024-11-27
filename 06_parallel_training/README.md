@@ -111,3 +111,9 @@ Where _proof_ can be any of:
 
 
 <!--[^gpu]: If you do not have access to the ALCF systems, you can install [OpenMPI](https://docs.open-mpi.org/en/v5.0.x/) and run across multiple CPUs as well-->
+
+## My Submission
+
+My terminal lost internet connection so I wasn't able to copy and paste the fun Shakesphere text. I hope the wandb and test-dist-plots directories are sufficient proof to show I was able to run!
+
+Shout out to Avery Wood and Ivana Escobar for sharing their solutions in Slack to get this running!! Cool model. 

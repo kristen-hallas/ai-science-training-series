@@ -1,0 +1,290 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.9
+    cli_version: 0.17.6
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1732664886
+    t:
+      1:
+      - 1
+      - 12
+      - 55
+      2:
+      - 1
+      - 12
+      - 54
+      - 55
+      3:
+      - 1
+      - 23
+      4: 3.11.9
+      5: 0.17.6
+      8:
+      - 8
+      13: linux-x86_64
+DIST_INFO:
+  desc: null
+  value:
+    DEVICE: cuda
+    DEVICE_ID: cuda:0
+    DISTRIBUTED_BACKEND: nccl
+    GPUS_PER_NODE: 8
+    HOSTS: '[''sophia-gpu-16.lab.alcf.anl.gov'']'
+    HOSTFILE: /var/spool/pbs/aux/38506.sophia-pbs-01.lab.alcf.anl.gov
+    HOSTNAME: sophia-gpu-16.lab.alcf.anl.gov
+    LOCAL_RANK: 0
+    MACHINE: Sophia
+    NUM_NODES: 1
+    NGPUS: 8
+    NGPUS_AVAILABLE: 8
+    NODE_ID: 0
+    RANK: 0
+    SCHEDULER: LOCAL
+    WORLD_SIZE_TOTAL: 8
+    WORLD_SIZE_IN_USE: 8
+    LAUNCH_CMD: null
+created_at:
+  desc: null
+  value: 2024-11-26-234804
+world_size:
+  desc: null
+  value: 8
+outdir:
+  desc: null
+  value: /home/khallas/wordplay
+env:
+  desc: null
+  value:
+    SHELL: /bin/bash
+    HISTCONTROL: ignoredups
+    CONDA_EXE: /soft/applications/conda/2024-08-08/mconda3/bin/conda
+    _CE_M: ''
+    ENV_NAME: conda/2024-08-08
+    HISTSIZE: '1000'
+    HOSTNAME: sophia-gpu-16
+    FPATH: /usr/local/share/zsh/site-functions:/usr/share/zsh/site-functions:/usr/share/zsh/5.8/functions:/usr/share/lmod/lmod/init/ksh_funcs
+    PBS_O_INTERACTIVE_AUTH_METHOD: munge
+    HDF5_DIR: /soft/libraries/hdf5/1.14.4.3-openmpi-5.0.3
+    PBS_TASKNUM: '1'
+    __LMOD_REF_COUNT_MODULEPATH: /etc/modulefiles:1;/usr/share/modulefiles:1;/soft/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1
+    PBS_JOBID: 38506.sophia-pbs-01.lab.alcf.anl.gov
+    PBS_O_PATH: /usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/opt/pbs/bin:/home/khallas/.local/bin:/home/khallas/bin
+    PBS_NODEFILE: /var/spool/pbs/aux/38506.sophia-pbs-01.lab.alcf.anl.gov
+    LMOD_FAMILY_HDF5_VERSION: 1.14.4.3-openmpi-5.0.3
+    PBS_O_SYSTEM: Linux
+    LMOD_DIR: /usr/share/lmod/lmod/libexec
+    PBS_ENVIRONMENT: PBS_INTERACTIVE
+    PWD: /home/khallas/wordplay
+    PBS_O_QUEUE: by-node
+    GSETTINGS_SCHEMA_DIR: /soft/applications/conda/2024-08-08/mconda3/share/glib-2.0/schemas
+    PBS_JOBCOOKIE: 442B34D8178C1A8443EF73BD6B5360B3
+    LOGNAME: khallas
+    CONDA_PREFIX: /soft/applications/conda/2024-08-08/mconda3
+    MODULESHOME: /usr/share/lmod/lmod
+    MANPATH: /soft/compilers/openmpi/5.0.3/share/man:/soft/compilers/clang/17.0.6/share/man:/usr/share/lmod/lmod/share/man::/opt/pbs/share/man
+    LMOD_FAMILY_PYTHON: conda
+    GSETTINGS_SCHEMA_DIR_CONDA_BACKUP: ''
+    PBS_O_HOME: /home/khallas
+    NGPU_PER_HOST: '8'
+    CXX: /soft/compilers/openmpi/5.0.3/bin/mpicxx
+    PBS_MOMPORT: '15003'
+    ftp_proxy: http://proxy.alcf.anl.gov:3128
+    XLA_PYTHON_CLIENT_PREALLOCATE: 'false'
+    PBS_JOBNAME: STDIN
+    PBS_NODENUM: '0'
+    __LMOD_REF_COUNT_PATH: /soft/compilers/cudatoolkit/cuda-12.6.0/bin:1;/soft/libraries/nccl/nccl_2.22.3-1+cuda12.6_x86_64/include:1;/soft/libraries/hdf5/1.14.4.3-openmpi-5.0.3/bin:1;/soft/libraries/ucx/1.17.0/bin:1;/soft/compilers/openmpi/5.0.3/bin:1;/soft/compilers/clang/17.0.6/share/clang:1;/soft/compilers/clang/17.0.6/bin:1;/usr/local/cuda/bin:1;/opt/bin:1;/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/pbs/bin:1;/home/khallas/.local/bin:1;/home/khallas/bin:1
+    LDFLAGS: -L/soft/applications/conda/2024-08-08/mconda3/lib -Wl,--enable-new-dtags,-rpath,/soft/applications/conda/2024-08-08/mconda3/lib
+    HOME: /home/khallas
+    LANG: en_US.UTF-8
+    MPI4JAX_USE_CUDA_MPI: '1'
+    PBS_ACCOUNT: ALCFAITP
+    VIRTUAL_ENV: /home/khallas/wordplay/venvs/2024-08-08
+    NCPUS: '256'
+    PBS_JOBDIR: /home/khallas
+    CONDA_NAME: '2024-08-08'
+    __LMOD_REF_COUNT_CPATH: /soft/libraries/hdf5/1.14.4.3-openmpi-5.0.3/include:1;/soft/libraries/ucx/1.17.0/include:1;/soft/compilers/openmpi/5.0.3/include:1
+    LMOD_SETTARG_FULL_SUPPORT: 'no'
+    NGPUS: '8'
+    DIST_LAUNCH: mpirun -n 8 -N 8 --hostfile /var/spool/pbs/aux/38506.sophia-pbs-01.lab.alcf.anl.gov
+      -x PATH -x LD_LIBRARY_PATH
+    CONDA_PROMPT_MODIFIER: '(2024-08-08/base) '
+    TMPDIR: /var/tmp/pbs.38506.sophia-pbs-01.lab.alcf.anl.gov
+    https_proxy: http://proxy.alcf.anl.gov:3128
+    MIG_PARTED_CONFIG_FILE: /etc/nvidia-mig-manager/config.yaml
+    LMOD_VERSION: 8.7.48
+    PBS_O_LANG: en_US.UTF-8
+    PYTHON_EXEC: /home/khallas/wordplay/venvs/2024-08-08/bin/python3
+    PBS_O_LOGNAME: khallas
+    MIG_PARTED_CHECKPOINT_FILE: /var/lib/nvidia-mig-manager/checkpoint.json
+    WORKING_DIR: /home/khallas/wordplay
+    MODULEPATH_ROOT: /usr/share/modulefiles
+    LAUNCH: mpirun -n 8 -N 8 --hostfile /var/spool/pbs/aux/38506.sophia-pbs-01.lab.alcf.anl.gov
+      -x PATH -x LD_LIBRARY_PATH
+    LMOD_FAMILY_PYTHON_VERSION: '2024-08-08'
+    PBS_QUEUE: by-node
+    PBS_O_MAIL: /var/spool/mail/khallas
+    LMOD_PKG: /usr/share/lmod/lmod
+    TERM: xterm-256color
+    MIG_PARTED_HOOKS_FILE: /etc/nvidia-mig-manager/hooks.yaml
+    _CE_CONDA: ''
+    F77: /soft/compilers/openmpi/5.0.3/bin/mpif77
+    LESSOPEN: '||/usr/bin/lesspipe.sh %s'
+    USER: khallas
+    CUDA_PATH: /soft/compilers/cudatoolkit/cuda-12.6.0/
+    CONDA_SHLVL: '1'
+    XLA_FLAGS: --xla_gpu_force_compilation_parallelism=1 --xla_gpu_cuda_data_dir=/soft/compilers/cudatoolkit/cuda-12.6.0/
+    LOADEDMODULES: compilers/clang/release-17.0.6:compilers/openmpi/5.0.3:hdf5/1.14.4.3-openmpi-5.0.3:conda/2024-08-08
+    VENV_DIR: /home/khallas/wordplay/venvs/2024-08-08
+    F90: /soft/compilers/openmpi/5.0.3/bin/mpif90
+    PBS_O_HOST: sophia-login-01.mcp.alcf.anl.gov
+    LMOD_ROOT: /usr/share/lmod
+    SHLVL: '1'
+    BASH_ENV: /usr/share/lmod/lmod/init/bash
+    LMOD_sys: Linux
+    HTTPS_PROXY: http://proxy.alcf.anl.gov:3128
+    HTTP_PROXY: http://proxy.alcf.anl.gov:3128
+    LMOD_FAMILY_HDF5: hdf5
+    __LMOD_REF_COUNT_MANPATH: /soft/compilers/openmpi/5.0.3/share/man:1;/soft/compilers/clang/17.0.6/share/man:1;/usr/share/lmod/lmod/share/man:1;:1;/opt/pbs/share/man:1
+    CUDA_TOOLKIT_BASE: /soft/compilers/cudatoolkit/cuda-12.6.0/
+    VIRTUAL_ENV_PROMPT: '(2024-08-08) '
+    http_proxy: http://proxy.alcf.anl.gov:3128
+    CONDA_PYTHON_EXE: /soft/applications/conda/2024-08-08/mconda3/bin/python
+    LD_LIBRARY_PATH: /soft/compilers/cudatoolkit/cuda-12.6.0/extras/CUPTI/lib64:/soft/compilers/cudatoolkit/cuda-12.6.0/lib64:/soft/libraries/trt/TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0/lib:/soft/libraries/nccl/nccl_2.22.3-1+cuda12.6_x86_64/lib:/soft/libraries/cudnn/cudnn-cuda12-linux-x64-v9.3.0.75/lib:/soft/libraries/hdf5/1.14.4.3-openmpi-5.0.3/lib:/soft/libraries/ucx/1.17.0/lib:/soft/compilers/openmpi/5.0.3/lib:/soft/compilers/clang/17.0.6/lib
+    S_COLORS: auto
+    CONDA_DEFAULT_ENV: base
+    OMP_NUM_THREADS: '256'
+    PBS_HOOK_RESOURCES: eJxdUe2O4yAMfKHqRNMP5YL4t++BKHVSdgnOGmiatz+TJm1zEYrwjD/Gg/EeR22sxRyStjewP7o1zmcCtZdmZgN0Jrk76BJavmIo3GjoqjmEDmlSXy5agsIZmhYyTQP8R1yM/Wmd9zzEJiRVH89CvNHePNSpxBF0tMgiOMgUNJWxSvwRh/NJ2kwELPdDz6GuT6KqjkKC6TzoNrJECObC97U791qQ1rX45sd2YKpgq6p9LQrgIU4xQR/V3LS5YQ+y/J7te+jV37PoLjLYIUdVnc4ydOVWy+A0QcRMFlTE4eaMDHgFm7gO70BlKR46eFMSeIkE1MDDejkQfnOeHsghuTSpShLmtFljtkZfEGMqEfi5cbMMb15ymrfEhMn4T8eO4lCJ8i3UXLM/ypFzkuvZ+X0jBB/J/ryMeVb8Zsigt2Y+sc1CrIx4V206tz7JgrweSaxIRyZcN8jb6AWIo2vTJuVuvOOij4da2+yW6t06e7eO/Ac6RhYV
+    NHOSTS: '1'
+    which_declare: declare -f
+    ezlaunch: mpirun -n 8 -N 8 --hostfile /var/spool/pbs/aux/38506.sophia-pbs-01.lab.alcf.anl.gov
+      -x PATH -x LD_LIBRARY_PATH
+    CUDA_HOME: /soft/compilers/cudatoolkit/cuda-12.6.0/
+    XDG_DATA_DIRS: /home/khallas/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+    PBS_O_SHELL: /bin/bash
+    PATH: /home/khallas/wordplay/venvs/2024-08-08/bin:/soft/applications/conda/2024-08-08/mconda3/bin:/soft/applications/conda/2024-08-08/mconda3/condabin:/soft/compilers/cudatoolkit/cuda-12.6.0/bin:/soft/libraries/nccl/nccl_2.22.3-1+cuda12.6_x86_64/include:/soft/libraries/hdf5/1.14.4.3-openmpi-5.0.3/bin:/soft/libraries/ucx/1.17.0/bin:/soft/compilers/openmpi/5.0.3/bin:/soft/compilers/clang/17.0.6/share/clang:/soft/compilers/clang/17.0.6/bin:/usr/local/cuda/bin:/opt/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/pbs/bin:/home/khallas/.local/bin:/home/khallas/bin
+    MODULEPATH: /etc/modulefiles:/usr/share/modulefiles:/soft/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core
+    PBS_O_WORKDIR: /home/khallas/wordplay
+    CC: /soft/compilers/openmpi/5.0.3/bin/mpicc
+    PYTHONUSERBASE: /home/khallas/.local/sophia/conda/2024-08-08
+    _LMFILES_: /soft/modulefiles/compilers/clang/release-17.0.6.lua:/soft/modulefiles/compilers/openmpi/5.0.3.lua:/soft/modulefiles/hdf5/1.14.4.3-openmpi-5.0.3.lua:/soft/modulefiles/conda/2024-08-08.lua
+    CFLAGS: -I/soft/applications/conda/2024-08-08/mconda3/include
+    LMOD_CMD: /usr/share/lmod/lmod/libexec/lmod
+    HDF5_ROOT: /soft/libraries/hdf5/1.14.4.3-openmpi-5.0.3
+    MAIL: /var/spool/mail/khallas
+    __LMOD_REF_COUNT_LD_LIBRARY_PATH: /soft/compilers/cudatoolkit/cuda-12.6.0/extras/CUPTI/lib64:1;/soft/compilers/cudatoolkit/cuda-12.6.0/lib64:1;/soft/libraries/trt/TensorRT-8.6.1.6.Linux.x86_64-gnu.cuda-12.0/lib:1;/soft/libraries/nccl/nccl_2.22.3-1+cuda12.6_x86_64/lib:1;/soft/libraries/cudnn/cudnn-cuda12-linux-x64-v9.3.0.75/lib:1;/soft/libraries/hdf5/1.14.4.3-openmpi-5.0.3/lib:1;/soft/libraries/ucx/1.17.0/lib:1;/soft/compilers/openmpi/5.0.3/lib:1;/soft/compilers/clang/17.0.6/lib:1
+    CPATH: /soft/libraries/hdf5/1.14.4.3-openmpi-5.0.3/include:/soft/libraries/ucx/1.17.0/include:/soft/compilers/openmpi/5.0.3/include
+    UCX_LOG_LEVEL: error
+    OLDPWD: /home/khallas
+    BASH_FUNC_ml%%: '() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+
+      }'
+    BASH_FUNC_which%%: "() {  ( alias;\n eval ${which_declare} ) | /usr/bin/which\
+      \ --tty-only --read-alias --read-functions --show-tilde --show-dot $@\n}"
+    BASH_FUNC_module%%: "() {  if [ -z \"${LMOD_SH_DBG_ON+x}\" ]; then\n case \"$-\"\
+      \ in \n *v*x*)\n __lmod_sh_dbg='vx'\n ;;\n *v*)\n __lmod_sh_dbg='v'\n ;;\n *x*)\n\
+      \ __lmod_sh_dbg='x'\n ;;\n esac;\n fi;\n if [ -n \"${__lmod_sh_dbg:-}\" ]; then\n\
+      \ set +$__lmod_sh_dbg;\n echo \"Shell debugging temporarily silenced: export\
+      \ LMOD_SH_DBG_ON=1 for Lmod's output\" 1>&2;\n fi;\n eval \"$($LMOD_CMD shell\
+      \ \"$@\")\" && eval \"$(${LMOD_SETTARG_CMD:-:} -s sh)\";\n __lmod_my_status=$?;\n\
+      \ if [ -n \"${__lmod_sh_dbg:-}\" ]; then\n echo \"Shell debugging restarted\"\
+      \ 1>&2;\n set -$__lmod_sh_dbg;\n fi;\n unset __lmod_sh_dbg;\n return $__lmod_my_status\n\
+      }"
+    BASH_FUNC_conda%%: "() {  \\local cmd=\"${1-__missing__}\";\n case \"$cmd\" in\
+      \ \n activate | deactivate)\n __conda_activate \"$@\"\n ;;\n install | update\
+      \ | upgrade | remove | uninstall)\n __conda_exe \"$@\" || \\return;\n __conda_reactivate\n\
+      \ ;;\n *)\n __conda_exe \"$@\"\n ;;\n esac\n}"
+    BASH_FUNC___conda_reactivate%%: "() {  \\local ask_conda;\n ask_conda=\"$(PS1=\"\
+      ${PS1:-}\" __conda_exe shell.posix reactivate)\" || \\return;\n \\eval \"$ask_conda\"\
+      ;\n __conda_hashr\n}"
+    BASH_FUNC___conda_hashr%%: "() {  if [ -n \"${ZSH_VERSION:+x}\" ]; then\n \\rehash;\n\
+      \ else\n if [ -n \"${POSH_VERSION:+x}\" ]; then\n :;\n else\n \\hash -r;\n fi;\n\
+      \ fi\n}"
+    BASH_FUNC___conda_activate%%: "() {  if [ -n \"${CONDA_PS1_BACKUP:+x}\" ]; then\n\
+      \ PS1=\"$CONDA_PS1_BACKUP\";\n \\unset CONDA_PS1_BACKUP;\n fi;\n \\local ask_conda;\n\
+      \ ask_conda=\"$(PS1=\"${PS1:-}\" __conda_exe shell.posix \"$@\")\" || \\return;\n\
+      \ \\eval \"$ask_conda\";\n __conda_hashr\n}"
+    _: /soft/compilers/openmpi/5.0.3/bin/mpirun
+    OMPI_VERSION: 5.0.3
+    OMPI_TOOL_NAME: mpirun
+    OMPI_LIBDIR_LOC: /soft/compilers/openmpi/5.0.3/lib
+    OMPI_MCA_PREFIXES: mca,opal,ompi,atomic,memheap,scoll,spml,sshmem,bml,coll,fbtl,fcoll,fs,hook,io,mtl,op,osc,part,pml,sharedfp,topo,vprotocol,accelerator,allocator,backtrace,btl,dl,hwloc,if,installdirs,memchecker,memcpy,memory,mpool,patcher,rcache,reachable,shmem,smsc,threads,timer
+    PRTE_SHARED_FS: 'FALSE'
+    PRTE_LAUNCHED: '1'
+    PMIX_PARAM_FILE_PASSED: '1'
+    OPAL_USER_PARAMS_GIVEN: '1'
+    PMIX_NAMESPACE: prterun-sophia-gpu-16-2532455@1
+    PMIX_RANK: '0'
+    PMIX_SERVER_URI41: prterun-sophia-gpu-16-2532455@0.0;tcp4://10.230.2.204:43343
+    PMIX_SERVER_URI4: prterun-sophia-gpu-16-2532455@0.0;tcp4://10.230.2.204:43343
+    PMIX_SERVER_URI3: prterun-sophia-gpu-16-2532455@0.0;tcp4://10.230.2.204:43343
+    PMIX_SERVER_URI2: prterun-sophia-gpu-16-2532455@0.0;tcp4://10.230.2.204:43343
+    PMIX_SERVER_URI21: prterun-sophia-gpu-16-2532455@0.0;tcp4://10.230.2.204:43343
+    PMIX_SECURITY_MODE: native
+    PMIX_BFROP_BUFFER_TYPE: PMIX_BFROP_BUFFER_NON_DESC
+    PMIX_GDS_MODULE: shmem2,hash
+    PMIX_SERVER_TMPDIR: /var/tmp/pbs.38506.sophia-pbs-01.lab.alcf.anl.gov/prterun.sophia-gpu-16.2532455.39940
+    PMIX_SYSTEM_TMPDIR: /var/tmp/pbs.38506.sophia-pbs-01.lab.alcf.anl.gov
+    OMPI_UNIVERSE_SIZE: '1'
+    OMPI_COMM_WORLD_SIZE: '8'
+    OMPI_WORLD_SIZE: '8'
+    OMPI_MCA_num_procs: '8'
+    OMPI_COMM_WORLD_LOCAL_SIZE: '8'
+    OMPI_WORLD_LOCAL_SIZE: '8'
+    OMPI_NUM_APP_CTX: '1'
+    OMPI_FILE_LOCATION: /var/tmp/pbs.38506.sophia-pbs-01.lab.alcf.anl.gov/prterun.sophia-gpu-16.2532455.39940/1/0
+    OMPI_MCA_initial_wdir: /home/khallas/wordplay
+    OMPI_COMMAND: python3
+    OMPI_ARGV: -m ezpz.test_dist
+    OMPI_MCA_cpu_type: x86_64
+    OMPI_COMM_WORLD_RANK: '0'
+    OMPI_COMM_WORLD_LOCAL_RANK: '0'
+    OMPI_COMM_WORLD_NODE_RANK: '0'
+    PMIX_HOSTNAME: sophia-gpu-16
+    PMIX_VERSION: 5.0.2rc2
+    COLORTERM: truecolor
+    COLUMNS: '119'
+    TF_CPP_MIN_LOG_LEVEL: '1'
+    PYTHONIOENCODING: utf-8
+    LOCAL_RANK: '0'
+    RANK: '0'
+    WORLD_SIZE: '8'
+    MASTER_ADDR: sophia-gpu-16
+    MASTER_PORT: '29500'
+    CUDA_MODULE_LOADING: LAZY
+    world_size: '8'
+    LOCAL_NODEFILE: /var/spool/pbs/aux/38506.sophia-pbs-01.lab.alcf.anl.gov
+    NUM_NODES: '1'
+    LOCAL_SIZE: '8'
+    WANDB_SERVICE: 2-2533940-tcp-localhost-45933
+machine:
+  desc: null
+  value: Sophia
+warmup:
+  desc: null
+  value: 0
+log_freq:
+  desc: null
+  value: 1
+batch_size:
+  desc: null
+  value: 64
+input_size:
+  desc: null
+  value: 128
+output_size:
+  desc: null
+  value: 128
+dtype:
+  desc: null
+  value: torch.float32
+device:
+  desc: null
+  value: cuda
+train_iters:
+  desc: null
+  value: 100
